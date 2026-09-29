@@ -1,0 +1,119 @@
+/* ==========================================================================
+   DYNAMIC LIGHT COLOR THEME TRANSITIONS & IMAGE-ONLY HOVER EFFECTS
+   ========================================================================== */
+
+/* Smooth Background Color Transitions for Page Canvas & Container Panels */
+html, body, 
+.framer-72rtr7, 
+.framer-18jp7qa, 
+.framer-1rcx8qz, 
+.framer-ga55q0, 
+.framer-1htamxq, 
+.framer-9y8vvk, 
+.framer-1v9wb78, 
+.framer-bht0kd, 
+.framer-1dxhny9, 
+.framer-hribd1, 
+.framer-1sft2cp, 
+.framer-1bx7bwl,
+.framer-1f54tjc,
+.framer-1bojdf8-container,
+.framer-yyfdzd-container,
+.framer-1m6xtzk-container {
+  transition: background-color 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.6s ease, 
+              color 0.4s ease !important;
+}
+
+/* Light Color Theme Presets */
+
+/* Color Theme 1: Soft Lavender / Lilac (My Hive) */
+body.theme-purple, 
+body.theme-purple .framer-72rtr7,
+body.theme-purple .framer-1f54tjc,
+body.theme-purple .framer-ga55q0,
+body.theme-purple .framer-9y8vvk {
+  background-color: #f5efff !important;
+}
+
+/* Color Theme 2: Soft Mint Teal (Vision Coach) */
+body.theme-teal, 
+body.theme-teal .framer-72rtr7,
+body.theme-teal .framer-1f54tjc,
+body.theme-teal .framer-ga55q0,
+body.theme-teal .framer-9y8vvk {
+  background-color: #e6faf6 !important;
+}
+
+/* Color Theme 3: Warm Peach Amber (Assistive Device) */
+body.theme-amber, 
+body.theme-amber .framer-72rtr7,
+body.theme-amber .framer-1f54tjc,
+body.theme-amber .framer-ga55q0,
+body.theme-amber .framer-9y8vvk {
+  background-color: #fff4e6 !important;
+}
+
+/* Color Theme 4: Soft Rose Crimson (AI Security Surveillance) */
+body.theme-red, 
+body.theme-red .framer-72rtr7,
+body.theme-red .framer-1f54tjc,
+body.theme-red .framer-ga55q0,
+body.theme-red .framer-9y8vvk {
+  background-color: #ffeef0 !important;
+}
+
+/* Color Theme 5: Soft Ice Blue (IITG Digital Catalogue) */
+body.theme-blue, 
+body.theme-blue .framer-72rtr7,
+body.theme-blue .framer-1f54tjc,
+body.theme-blue .framer-ga55q0,
+body.theme-blue .framer-9y8vvk {
+  background-color: #ebf3ff !important;
+}
+
+/* Color Theme 6: Soft Crisp Lime (Quyl LMS) */
+body.theme-green, 
+body.theme-green .framer-72rtr7,
+body.theme-green .framer-1f54tjc,
+body.theme-green .framer-ga55q0,
+body.theme-green .framer-9y8vvk {
+  background-color: #f3fbe8 !important;
+}
+
+/* Outer Containers: STICKY & STATIONARY (No expanding or scaling) */
+.project-card-interactive {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Image-Only Hover Zoom Transitions */
+.project-card-interactive img,
+a img,
+.framer-1sywflq-container img,
+.framer-1xcg9jj-container img,
+.framer-3ygiqr-container img,
+.framer-5ru3bu-container img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease !important;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* On hover, ONLY the image scales smoothly inside its container */
+.project-card-interactive:hover img,
+a:hover img,
+.framer-1sywflq-container:hover img,
+.framer-1xcg9jj-container:hover img,
+.framer-3ygiqr-container:hover img,
+.framer-5ru3bu-container:hover img {
+  transform: scale(1.05) !important;
+  filter: brightness(1.03) !important;
+}
+
+/* Active Section Accent Borders */
+body.theme-purple .framer-ga55q0, body.theme-purple .framer-1htamxq { border-color: rgba(168, 85, 247, 0.4) !important; }
+body.theme-teal .framer-ga55q0, body.theme-teal .framer-1htamxq { border-color: rgba(20, 184, 166, 0.4) !important; }
+body.theme-amber .framer-ga55q0, body.theme-amber .framer-1htamxq { border-color: rgba(249, 115, 22, 0.4) !important; }
+body.theme-red .framer-ga55q0, body.theme-red .framer-1htamxq { border-color: rgba(239, 68, 68, 0.4) !important; }
+body.theme-blue .framer-ga55q0, body.theme-blue .framer-1htamxq { border-color: rgba(59, 130, 246, 0.4) !important; }
+body.theme-green .framer-ga55q0, body.theme-green .framer-1htamxq { border-color: rgba(132, 204, 22, 0.4) !important; }
